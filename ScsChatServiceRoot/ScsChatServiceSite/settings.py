@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "ScsUsers.apps.ScsloginserverConfig",
     "ScsClient.apps.ScsclientConfig",
+    "mod_wsgi.server"
 ]
 
 MIDDLEWARE = [
