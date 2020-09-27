@@ -47,7 +47,7 @@ function messageReceived(event) {
 }
 
 function newSocket(){
-    return new WebSocket("ws://localhost:2020");
+    return new WebSocket("ws://eliaseriksson.eu:2020");
 }
 let socket = newSocket();
 
