@@ -1,0 +1,16 @@
+{% extends "ScsUsers/base.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ScsUsers/css/login.css' %}">
+{% endblock styles %}
+
+{% block main %}
+    <form class="form" method="post" enctype="application/x-www-form-urlencoded">
+        {% csrf_token %}
+        {{ form }}
+        <div class="flex-center">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+{% endblock %}

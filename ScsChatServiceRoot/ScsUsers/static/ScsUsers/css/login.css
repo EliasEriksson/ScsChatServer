@@ -1,0 +1,12 @@
+form > label, form input[type=submit] {
+    margin-top: 2em;
+}
+
+form > input {
+    min-width: 32em;
+}
+
+form input[type=submit] {
+    min-width: 0;
+    width: 50%;
+}

@@ -1,0 +1,13 @@
+br {
+    display: none;
+}
+
+form > label, input[type=submit] {
+    margin-top: 2em;
+    width: 50%;
+}
+
+form > span.helptext {
+    margin-top: 0.5em;
+}
+

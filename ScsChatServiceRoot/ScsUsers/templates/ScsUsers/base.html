@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'ScsUsers/css/base.css' %}">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+<header>
+    <nav class="main">
+        <ul>
+            <li><a href="{% url 'user-logout' %}">Logout</a></li>
+            <li><a href="{% url 'user-register' %}">Register</a></li>
+            <li><a href="{% url 'user-login' %}">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    {% block main %}
+    {% endblock main %}
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
