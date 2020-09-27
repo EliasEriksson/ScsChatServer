@@ -28,6 +28,6 @@ if __name__ == '__main__':
     setup()
     import ScsChatServiceRoot.Server.server as server
     loop = asyncio.get_event_loop()
-    server = websockets.serve(server.Server(loop).handle_connection, "", 2020)
+    server = websockets.serve(server.Server(loop).handle_connection, "", 2021)
     loop.run_until_complete(server)
     loop.run_forever()
